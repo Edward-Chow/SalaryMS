@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{65669A79-B758-4455-BFAD-56082A41379D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SalaryMS</RootNamespace>
+    <AssemblyName>SalaryMS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connection\Connection.cs" />
+    <Compile Include="Connection\Operation.cs" />
+    <Compile Include="FininceMinistry\AllStaffSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FininceMinistry\AllStaffSalary.Designer.cs">
+      <DependentUpon>AllStaffSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FininceMinistry\EducationStandard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FininceMinistry\EducationStandard.Designer.cs">
+      <DependentUpon>EducationStandard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FininceMinistry\fininceLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FininceMinistry\fininceLogin.Designer.cs">
+      <DependentUpon>fininceLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FininceMinistry\JobtimeStandard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FininceMinistry\JobtimeStandard.Designer.cs">
+      <DependentUpon>JobtimeStandard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FininceMinistry\JobTitleStandard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FininceMinistry\JobTitleStandard.Designer.cs">
+      <DependentUpon>JobTitleStandard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FininceMinistry\MinistryStandard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FininceMinistry\MinistryStandard.Designer.cs">
+      <DependentUpon>MinistryStandard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FininceMinistry\SalaryStandardQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FininceMinistry\SalaryStandardQuery.Designer.cs">
+      <DependentUpon>SalaryStandardQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FininceMinistry\SalaryStandardSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FininceMinistry\SalaryStandardSetting.Designer.cs">
+      <DependentUpon>SalaryStandardSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FininceMinistry\StaffallMonthSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FininceMinistry\StaffallMonthSalary.Designer.cs">
+      <DependentUpon>StaffallMonthSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonnelMinistry\AttendanceInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonnelMinistry\AttendanceInsert.Designer.cs">
+      <DependentUpon>AttendanceInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonnelMinistry\personnelLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonnelMinistry\personnelLogin.Designer.cs">
+      <DependentUpon>personnelLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonnelMinistry\StaffDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonnelMinistry\StaffDelete.Designer.cs">
+      <DependentUpon>StaffDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonnelMinistry\StaffInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonnelMinistry\StaffInfo.Designer.cs">
+      <DependentUpon>StaffInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonnelMinistry\StaffList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonnelMinistry\StaffList.Designer.cs">
+      <DependentUpon>StaffList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonnelMinistry\StaffUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonnelMinistry\StaffUpdate.Designer.cs">
+      <DependentUpon>StaffUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonnelMinistry\userAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonnelMinistry\userAdd.Designer.cs">
+      <DependentUpon>userAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonnelMinistry\userDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonnelMinistry\userDelete.Designer.cs">
+      <DependentUpon>userDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonnelMinistry\userpower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonnelMinistry\userpower.Designer.cs">
+      <DependentUpon>userpower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PersonnelMinistry\staffAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonnelMinistry\staffAdd.Designer.cs">
+      <DependentUpon>staffAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\SalaryQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\SalaryQuery.Designer.cs">
+      <DependentUpon>SalaryQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\staffLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\staffLogin.Designer.cs">
+      <DependentUpon>staffLogin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FininceMinistry\AllStaffSalary.resx">
+      <DependentUpon>AllStaffSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FininceMinistry\EducationStandard.resx">
+      <DependentUpon>EducationStandard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FininceMinistry\fininceLogin.resx">
+      <DependentUpon>fininceLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FininceMinistry\JobtimeStandard.resx">
+      <DependentUpon>JobtimeStandard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FininceMinistry\JobTitleStandard.resx">
+      <DependentUpon>JobTitleStandard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FininceMinistry\MinistryStandard.resx">
+      <DependentUpon>MinistryStandard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FininceMinistry\SalaryStandardQuery.resx">
+      <DependentUpon>SalaryStandardQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FininceMinistry\SalaryStandardSetting.resx">
+      <DependentUpon>SalaryStandardSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FininceMinistry\StaffallMonthSalary.resx">
+      <DependentUpon>StaffallMonthSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonnelMinistry\AttendanceInsert.resx">
+      <DependentUpon>AttendanceInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonnelMinistry\personnelLogin.resx">
+      <DependentUpon>personnelLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonnelMinistry\StaffDelete.resx">
+      <DependentUpon>StaffDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonnelMinistry\StaffInfo.resx">
+      <DependentUpon>StaffInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonnelMinistry\StaffList.resx">
+      <DependentUpon>StaffList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonnelMinistry\StaffUpdate.resx">
+      <DependentUpon>StaffUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonnelMinistry\userAdd.resx">
+      <DependentUpon>userAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonnelMinistry\userDelete.resx">
+      <DependentUpon>userDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonnelMinistry\userpower.resx">
+      <DependentUpon>userpower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PersonnelMinistry\staffAdd.resx">
+      <DependentUpon>staffAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\SalaryQuery.resx">
+      <DependentUpon>SalaryQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\staffLogin.resx">
+      <DependentUpon>staffLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
